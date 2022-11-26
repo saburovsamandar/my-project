@@ -14,8 +14,8 @@ window.onscroll = function () {
   }
 
   function openNavbar() {
-    document.getElementById("navbar_nav").style.right = "0";
+    document.getElementById("navbar_nav").style.left = "0";
   }
   function closeNavbar() {
-    document.getElementById("navbar_nav").style.right = "-100%";
+    document.getElementById("navbar_nav").style.left = "-100%";
   }
