@@ -1,0 +1,125 @@
+body {
+  background: #E5E5E5;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+#header3 {
+  background: #393939;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+#header3 .header__nav_item_list a {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+#header3 .header__nav_item_list:hover {
+  background: #F65050;
+}
+#header3 .header__nav_end {
+  height: 50px;
+  border-left: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+#header3 .header__nav_end a {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 5px;
+  line-height: 10px;
+  color: rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 1008px) {
+  #header3 nav {
+    background: #19161B;
+    transition: 0.5s;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9;
+  }
+  #header3 .header__nav_item {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    bottom: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+    height: 100vh;
+    background-color: #19161B;
+    padding: 0;
+    z-index: 4;
+    background-image: url(../images/photo_2022-06-28_23-47-24.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #header3 .header__nav_item_list {
+    padding: 0;
+  }
+  #header3 .header__nav_item_list:hover {
+    background-color: #19161B;
+  }
+  #header3 .header__nav_item a {
+    color: #491daf;
+    font-size: 20px !important;
+    display: inline-block;
+  }
+  #header3 .header__nav_item a:hover {
+    color: aqua;
+  }
+  #header3 .header__nav_item_close {
+    display: block;
+    color: white;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+  }
+  #header3 .header__nav_item_close:hover {
+    color: red;
+  }
+}
+
+.nav-shrink {
+  padding: 25px 0;
+}
+
+.hamburger {
+  background-color: #F65050;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  display: none;
+}
+.hamburger:hover {
+  background-color: rgb(193, 58, 58);
+}
+
+@media screen and (max-width: 1008px) {
+  .hamburger {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
